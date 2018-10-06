@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<center>
+<title>our webpage</title>
+</center>
+<style>
+
+ *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 45px;
+}
+.row{
+  display: grid;
+  text-align: center;
+}
+.col{
+
+  grid-row : 3;
+  border: 2px solid;
+  margin: 20px;
+
+}
+.col p{
+  display: block;
+  padding-top: 30px;
+}
+.col h3{  
+  display:block;
+  float: right;
+  border-left: 2px solid;
+  border-bottom: 2px solid; 
+
+}
+.col-md-2{
+ margin:20px 0;
+}
+@media (min-width: 900px){
+  .col{
+    grid-template-rows:(auto-fill,minmax(500px,700px));
+  }
+}
+@media(max-width:768px){
+ 
+html,body{
+  display:flex;
+}
+}
+</style>
+</head>
+<body>
+<center><h1>Our Menu</h1></center>
+
+<div class="row">
+  <div class="col col-lg-3 col-md-1" >
+    <h3>chicken
+    </h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.</p>
+  </div>
+  <div class="col col-lg-3 col-md-2">
+    <h3>beef
+    </h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.</p>
+  </div>
+  <div class="col col-lg-3 col-md-3"><h3>sushi
+    </h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. </p>
+  </div>
+</div>
+
+</body>
+</html>
